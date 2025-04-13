@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faReact, faDocker, faPython } from '@fortawesome/free-brands-svg-icons';
 import Chip from '@mui/material/Chip';
 import '../assets/styles/Expertise.scss';
+import {faCode, faPeopleGroup} from "@fortawesome/free-solid-svg-icons";
 
 const labelsFirst = [
     "React",
@@ -11,12 +12,12 @@ const labelsFirst = [
     "JavaScript",
     "HTML5",
     "CSS3",
-    "SASS",
-    "Flask",
-    "Python",
+    "Web3 Tools",
+    "Solidity",
+    "EVM",
     "SQL",
     "PostgreSQL",
-    "Postman"
+    "Node.js",
 ];
 
 const labelsSecond = [
@@ -49,8 +50,8 @@ function Expertise() {
             <div className="skills-grid">
                 <div className="skill">
                     <FontAwesomeIcon icon={faReact} size="3x"/>
-                    <h3>Full Stack Web Development</h3>
-                    <p>I have built a diverse array of web applications from scratch using modern technologies such as React and Flask. I have a strong proficiency in the SDLC process and frontend + backend development.</p>
+                    <h3>My Expertise</h3>
+                    <p>I have built a diverse array of Web3 applications from scratch using modern technologies. From smart contract architecture to full-stack dApps, my focus is on robust, scalable, and secure systems. I bring hands-on experience with Solidity, EVM chains, zk rollups, and decentralized storage, ensuring real-world readiness from idea to deployment.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsFirst.map((label, index) => (
@@ -60,27 +61,17 @@ function Expertise() {
                 </div>
 
                 <div className="skill">
-                    <FontAwesomeIcon icon={faDocker} size="3x"/>
-                    <h3>DevOps & Automation</h3>
-                    <p>Once the application is built, I help clients set up DevOps testing, CI/CD pipelines, and deployment automation to support the successful Go-Live.</p>
-                    <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
-                        {labelsSecond.map((label, index) => (
-                            <Chip key={index} className='chip' label={label} />
-                        ))}
-                    </div>
+                    <FontAwesomeIcon icon={faPeopleGroup} size="3x"/>
+                    <h3>My team</h3>
+                    <p>We are a focused, battle-tested crew of frontend and backend engineers with deep experience in blockchain development. Our team blends strong UI/UX skills with low-level smart contract logic. Together, we’ve shipped multiple production-grade apps, protocols, and internal tools. We operate fast, think long-term, and always build with security and quality in mind.</p>
+
                 </div>
 
                 <div className="skill">
-                    <FontAwesomeIcon icon={faPython} size="3x"/>
-                    <h3>GenAI & LLM</h3>
-                    <p>Stay relevant in the market by leveraging the latest AI models in your projects. I have professional experience building enterprise grade GenAI-enabled solutions to empower intelligent decision making.</p>
-                    <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
-                        {labelsThird.map((label, index) => (
-                            <Chip key={index} className='chip' label={label} />
-                        ))}
-                    </div>
+                    <FontAwesomeIcon icon={faCode} size="3x"/>
+                    <h3>What We Do</h3>
+                    <p>We help startups, DAOs, and enterprises launch secure and polished Web3 products. From MVP to full-featured systems, we cover smart contract development, full-stack dApps, audits, internal dashboards, and infrastructure setup. Whether it’s DeFi, NFTs, on-chain games, or custom tooling — we deliver clean code and real impact.</p>
+
                 </div>
             </div>
         </div>
