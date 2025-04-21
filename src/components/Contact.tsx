@@ -5,6 +5,8 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';
 import TextField from '@mui/material/TextField';
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import TelegramIcon from "@mui/icons-material/Telegram";
 
 function Contact() {
 
@@ -52,11 +54,12 @@ function Contact() {
   return (
     <div id="contact">
       <div className="items-container">
-        <div className="contact_wrapper">
-          <h1>Contact Me</h1>
-          <p>Got a project waiting to be realized? Let's collaborate and make it happen!</p>
-          <p>My contact number: +1 929 342 46 62 </p>
-          <p>My Linkedin:</p>
+        <div style={{display: 'flex', justifyContent: 'center', flexDirection: 'column'}} className="contact_wrapper">
+          <h1 style={{textAlign: 'center'}}>Contact Me</h1>
+          <p style={{textAlign: 'center'}}>Got a project waiting to be realized? Let's collaborate and make it
+            happen!</p>
+          <p style={{textAlign: 'center'}}>Feel free to reach out to me via social networks</p>
+
         </div>
       </div>
     </div>
