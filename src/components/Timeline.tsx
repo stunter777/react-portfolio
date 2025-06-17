@@ -43,7 +43,7 @@ function Timeline() {
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
             <h3 className="vertical-timeline-element-title">Web3 Engineer</h3>
-            <h4 className="vertical-timeline-element-subtitle">Moscow, Russia</h4>
+            <h4 className="vertical-timeline-element-subtitle">Dubai, UAE</h4>
             <p>
               Building & optimization of smart-contracts
             </p>
